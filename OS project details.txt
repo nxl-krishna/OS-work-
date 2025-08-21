@@ -1,0 +1,19 @@
+OS project details 
+What is eBPF?
+
+eBPF (extended Berkeley Packet Filter) is like a "virtual machine inside the Linux kernel".
+It lets you run small, safe programs in the kernel without writing kernel modules.
+
+Think of it as a way to extend the kernel’s power dynamically, while keeping it safe (programs are verified before running).
+
+use of the ebpf 
+networking 
+Tracing syscalls, function calls, and kernel events.
+Detect suspicious behavior (like rootkits, privilege escalations).
+Custom schedulers, memory access tracking.
+
+What is XDP?
+
+XDP (eXpress Data Path) is a high-performance packet processing framework in the Linux kernel.
+
+It lets you run small eBPF programs directly in the NIC(network interface card )driver, before the kernel network stack sees packets.
